@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "testcafe-reporter-minimal": "2.1.0"
+  }
+}

@@ -1,0 +1,26 @@
+hub:
+  image: selenium/hub
+
+firefox:
+  container_name: testcafe_firefox
+  image: selenium/node-firefox
+  links:
+    - hub
+
+chrome:
+  container_name: testcafe_chrome
+  image: selenium/node-chrome
+  links:
+    - hub
+
+testcafe:
+  container_name: myfirst_testcafe
+  image: testcafe/testcafe
+  environment:
+    - NODE_PATH=/opt/testcafe/node_modules:/opt
+    - SCREEN_WIDTH=1920
+    - SCREEN_HEIGHT=1080
+  volumes:
+    - ./tests:/tests
+    - ./screenshots:/screenshots
+  entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "${BROWSER} --no-sandbox", "-S", "-s", "screenshots", "/tests","--r","minimal"]
