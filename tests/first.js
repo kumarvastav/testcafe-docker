@@ -1,15 +1,14 @@
 import { Selector } from 'testcafe';
+import Homepage from './homepage';
 
 fixture `Gmail`
     .page `http://mail.google.com`;
 
 test('Login test', async t => {
-//    const runner = t.createRunner();
-//    runner.reporter('minimal');
-    const username = Selector('#identifierId');
+    const homepage = new Homepage();
 
     await t
-        .typeText(username, 'John.Smith@gmail.com')
-        .expect(username.value).contains('John.Smith@gmail.com')
-        .click('#identifierNext');
+        .typeText(homepage.username, 'John.Smith@gmail.com')
+        .expect(homepage.username.value).contains('John.Smith@gmail.com')
+        .click(homepage.next);
 });

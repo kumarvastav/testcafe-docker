@@ -23,4 +23,4 @@ testcafe:
   volumes:
     - ./tests:/tests
     - ./screenshots:/screenshots
-  entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "${BROWSER} --no-sandbox", "-S", "-s", "screenshots", "/tests","--r","minimal"]
+  entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "${BROWSER} --no-sandbox", "-S", "-s", "screenshots", "/tests","-r","minimal"]
