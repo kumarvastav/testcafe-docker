@@ -1,18 +1,3 @@
-hub:
-  image: selenium/hub
-
-firefox:
-  container_name: testcafe_firefox
-  image: selenium/node-firefox
-  links:
-    - hub
-
-chrome:
-  container_name: testcafe_chrome
-  image: selenium/node-chrome
-  links:
-    - hub
-
 testcafe:
   container_name: myfirst_testcafe
   image: testcafe/testcafe

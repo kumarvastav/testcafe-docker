@@ -39,5 +39,10 @@ Execution:
 3. Clone this repo
    git clone https://github.com/kumarvastav/testcafe-docker.git
 
-3. Run the test locally
+4. Run the test locally
    testcafe chrome tests/
+
+5. Run the test locally
+      testcafe --live chrome tests/
+
+docker pull testcafe/testcafe
