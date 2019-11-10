@@ -1,0 +1,6 @@
+image:
+
+before_script:
+
+testcafe:
+  script: BROWSER=safari docker-compose up --force-recreate --abort-on-container-exit
