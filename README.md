@@ -8,12 +8,12 @@ Features
 - Making use of docker-compose to run this in docker containers
 
 Docker Image:
-#docker pull testcafe/testcafe
+# docker pull testcafe/testcafe
 
 Execution:
 
 1. Clone this repo
-   git clone https://github.com/kumarvastav/testcafe-docker.git
+   # git clone https://github.com/kumarvastav/testcafe-docker.git
 
 2. Run as docker containers
    BROWSER={Browsername} docker-compose up --force-recreate --abort-on-container-exit
@@ -21,13 +21,13 @@ Execution:
    Browsername = chromium (chrome)
    Browsername = firefox (firefox)
 
-   ex. BROWSER=chromiun docker-compose up --force-recreate --abort-on-container-exit
+   # ex. BROWSER=chromiun docker-compose up --force-recreate --abort-on-container-exit
 
 
 (Local setup and running the test locally)
 
 1. Install testcafe as npm package globally
-   #npm install -g testcafe
+   # npm install -g testcafe
 
     Follow below steps if permission denied error occurs during testcafe installation
     - mkdir ~/.npm-global
@@ -39,10 +39,10 @@ Execution:
    #testcafe -v
 
 3. Clone this repo
-   #git clone https://github.com/kumarvastav/testcafe-docker.git
+   # git clone https://github.com/kumarvastav/testcafe-docker.git
 
 4. Run the test locally
-   #testcafe chrome tests/
+   # testcafe chrome tests/
 
 5. Run the test locally
-   #testcafe --live chrome tests/
+   # testcafe --live chrome tests/
