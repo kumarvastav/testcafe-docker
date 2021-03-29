@@ -7,6 +7,8 @@ Features
 - Provides rich source of API's for end-2-end tests out-of-box capabilities
 - Making use of docker-compose to run this in docker containers
 
+Docker Image:
+#docker pull testcafe/testcafe
 
 Execution:
 
@@ -25,7 +27,7 @@ Execution:
 (Local setup and running the test locally)
 
 1. Install testcafe as npm package globally
-   npm install -g testcafe
+   #npm install -g testcafe
 
     Follow below steps if permission denied error occurs during testcafe installation
     - mkdir ~/.npm-global
@@ -34,15 +36,13 @@ Execution:
     - source ~/.profile
 
 2. Check if testcafe is installed successfully
-   testcafe -v
+   #testcafe -v
 
 3. Clone this repo
-   git clone https://github.com/kumarvastav/testcafe-docker.git
+   #git clone https://github.com/kumarvastav/testcafe-docker.git
 
 4. Run the test locally
-   testcafe chrome tests/
+   #testcafe chrome tests/
 
 5. Run the test locally
-      testcafe --live chrome tests/
-
-docker pull testcafe/testcafe
+   #testcafe --live chrome tests/
