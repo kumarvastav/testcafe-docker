@@ -1,5 +1,5 @@
 import { Selector } from 'testcafe';
-import Homepage from './homepage';
+import Homepage from '../fixtures/homepage';
 
 fixture `Gmail`
     .page `http://mail.google.com`;
